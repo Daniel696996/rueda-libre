@@ -1,0 +1,28 @@
+Registro de la Bitacora
+
+URL complete: http://127.0.0.1:5500/index.html
+
+Protocolo: http
+
+Host: 127.0.0.1
+
+Puerto:5500
+
+Ruta: /index.html
+
+metodo de peticion:GET
+
+Codigo de estado:200 OK
+
+Ruta no existente /promociones.html
+al ejecutar la ruta no existente aparece Error 404 Not Found en la terminal y en la pagina visible Locala me muestra Cannot GET //promocionales.html, significa que el servidor local no encuentra el archive /promocionales.html por que este no se encuentra en la carpeta de mi Proyecto
+
+Roles
+HTML
+- Cumplira el Rol de crear las bases de la pagina, y ubicar seccion por seccion lo requerido, como los titulus, los textos, imagenes, botones, y links que esta requiera
+
+CSS
+- este tenra el rol de darle vida a la pagina con estilos requeridos por el cliente, creando distinciones en las diferentes secciones que tenga esta web como hacer mas intuitive la pagina para el usuario
+
+JavaScript
+- tendra el rol de darle funcionalidad a la pagina, dandole vida por el lado tecnico, hacioendo que funcionen los botones o las distitntyas configuraciones que esta pagina tenga  
