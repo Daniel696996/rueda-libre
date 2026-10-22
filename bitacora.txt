@@ -33,3 +33,16 @@ Al revisar Elemnts por primera vez el arbol de Documento no coincidia, despues d
 punto 4 de la semana 1
 al probar todos los links usando la Devtools de Network Todos funcionan correctamente, presentan error 404 despues de un tiempo de inactividad
 al querer usar los correos vinculados (que no existen) cancela el estado y subraya en rojo la peticion, pero no muestra un error declarado
+
+tabla de rutas
+1.Archivo de Origen : index.html
+destino  : tarifas.html
+Ruta escrita : paginas/tarifas.html
+
+2.Archivo de Origen : index.html
+destino : reserva.html
+ruta esrita painas/reserva.html
+
+3.Archivo de origen: pagina/tarifas.html
+destino: index.html
+ruta escrita: ../index.html
