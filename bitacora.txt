@@ -29,3 +29,5 @@ JavaScript
 
 Punto 2 de la semana 1
 Al revisar Elemnts por primera vez el arbol de Documento no coincidia, despues de una extensa revision y correccion el arbol coincidio
+
+punto 4 de la semana 1
