@@ -31,3 +31,5 @@ Punto 2 de la semana 1
 Al revisar Elemnts por primera vez el arbol de Documento no coincidia, despues de una extensa revision y correccion el arbol coincidio
 
 punto 4 de la semana 1
+al probar todos los links usando la Devtools de Network Todos funcionan correctamente, presentan error 404 despues de un tiempo de inactividad
+al querer usar los correos vinculados (que no existen) cancela el estado y subraya en rojo la peticion, pero no muestra un error declarado
