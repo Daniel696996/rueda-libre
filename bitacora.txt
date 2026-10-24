@@ -40,9 +40,114 @@ destino  : tarifas.html
 Ruta escrita : paginas/tarifas.html
 
 2.Archivo de Origen : index.html
-destino : reserva.html
-ruta esrita painas/reserva.html
+destino : reservas.html
+Ruta actual : paginas/reservas.html
 
-3.Archivo de origen: pagina/tarifas.html
+3.Archivo de origen: paginas/tarifas.html
 destino: index.html
 ruta escrita: ../index.html
+Esquema de las páginas
+
+Nota: este esquema describe la propuesta inicial. Las páginas actuales ya usan las etiquetas semánticas que corresponden a su contenido.
+
+Entregable 2 semana 1 esquema de la versión inicial
+
+1.Pagina de inicio index html
+Encabezado con el nombre Rueda Libre y el mensaje de bienvenida
+Navegacion con enlaces a tarifas y horarios. La ubicacion se abre desde un enlace dentro del contenido.
+Contenido principal con informacion de la empresa servicios pasos para alquilar y datos de contacto
+Secciones sobre quienes somos servicios cómo alquilar y dónde encontrarnos
+En la version inicial los servicios no estaban separados en articulos
+En la version inicial no se mostraba contenido complementario con aside
+Pie con el nombre correo y año
+
+2.Página de horarios reservas html
+Encabezado con el título Nuestros Horarios
+Navegacion para volver al inicio y consultar las tarifas
+Contenido principal con los horarios de atencion de cada día
+Seccion de horarios con la lista de días y horas
+En la version inicial no se usaban articulos en esta pagina
+En la version inicial no se mostraba contenido complementario con aside
+Enlace de contacto por correo
+Pie con el nombre correo y año
+
+3.Página de tarifas tarifas html
+Encabezado con el titulo Tarifas
+Navegacion para volver al inicio y consultar los horarios
+Contenido principal con los precios de bicicletas y recorridos guiados
+Seccion de tarifas de alquiler con una tabla y una nota en la version inicial.
+Seccion de recorridos guiados con una tabla una nota un enlace a horarios y una imagen
+En la version inicial no se usaban articulos en esta pagina
+En la version inicial no se mostraba contenido complementario con aside
+Pie con el nombre correo y año
+
+Registro de accesibilidad y publicación
+
+Revisión de las páginas actuales
+
+Inicio
+El documento está en español y tiene encabezado navegación contenido principal y pie de página
+El contenido está separado por temas y los tres servicios aparecen en artículos
+Las imágenes tienen texto alternativo
+La ubicación se consulta con un enlace a Google Maps
+El mensaje menciona divisiones y una imagen de mapa pero esos elementos no aparecen en el archivo actual
+
+Reservas
+El documento está en español y tiene encabezado navegación contenido principal y pie de página
+Los horarios y el formulario están separados en secciones
+El formulario tiene los grupos Tus datos Tu alquiler y Confirmación
+Los campos tienen etiquetas visibles y las opciones del plan usan botones de selección
+El mensaje menciona un span pero no aparece en el archivo actual
+El campo de correo tiene dos indicaciones de tipo repetidas y queda pendiente corregirlo en el HTML
+
+Tarifas
+El documento está en español y tiene encabezado navegación contenido principal y pie de página
+Las tarifas y los recorridos están organizados por secciones con tablas
+Las notas están en un aside y la imagen tiene texto alternativo
+El mensaje menciona divisiones y una etiqueta em corregida pero no hay div ni em en el archivo actual
+
+En las tres páginas hay un solo título principal y las imágenes incluyen texto alternativo
+En inicio los títulos pasan de h1 a h2 y los servicios usan h3
+En reservas y tarifas los títulos principales pasan de h1 a h2
+Los textos de navegación indican a qué página llevan
+
+Los correos de contacto cambian entre páginas
+En inicio aparece hola@ruedalibre.example
+En el aside de reservas aparece info@ruedalibre.com
+En los pies de página aparece info@ruedalibre.co
+
+Formulario y pruebas registradas en message
+
+El formulario incluye datos personales alquiler y confirmación
+La bicicleta se escoge de una lista y el plan permite una sola opción
+La fecha tiene un campo de calendario y la aceptación de políticas es obligatoria
+
+Se registró que el formulario rechazó el nombre vacío y el nombre Lu
+También rechazó el documento 12345 y el documento 1234A56
+El correo usuario.com no fue aceptado
+El celular 1234567890 no fue aceptado porque no empieza por tres
+El celular 300123 no fue aceptado porque está incompleto
+La fecha 2026-10-31 no fue aceptada porque está antes del periodo permitido
+
+Colores propuestos en la documentación
+
+Verde Ruta #1E7A4F para botones y enlaces
+Naranja Pedal #F39A2B para destacados y botones secundarios
+Azul Noche #14213D para títulos y encabezados
+Crema #FAF6EF para el fondo general
+Gris Asfalto #5B6470 para texto secundario
+
+El mensaje registra como legibles para texto normal el blanco sobre Verde Ruta el Azul Noche sobre Naranja Pedal el Azul Noche sobre Crema el Gris Asfalto sobre Crema el Verde Ruta sobre Crema y el blanco sobre Azul Noche
+El mensaje registra como no recomendados para texto normal el blanco sobre Naranja Pedal y el Naranja Pedal sobre Crema
+
+Las páginas HTML revisadas no incluyen una hoja de estilos por eso estos colores quedan como propuesta y no como cambios aplicados
+
+Pendiente de completar según la documentación
+
+Revisar las tres páginas usando solo el teclado
+Comprobar las combinaciones de colores con el verificador indicado
+Corregir los hallazgos pendientes en el HTML
+Revisar en línea las tres páginas las imágenes y los enlaces
+Confirmar la dirección pública antes de agregarla a la descripción del repositorio y a esta bitácora
+
+El correo indicado por el usuario para identificarlo es danielpanon899@gmail.com
