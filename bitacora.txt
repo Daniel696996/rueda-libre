@@ -46,3 +46,37 @@ ruta esrita painas/reserva.html
 3.Archivo de origen: pagina/tarifas.html
 destino: index.html
 ruta escrita: ../index.html
+Esquema de las páginas
+
+Nota: estos esquemas identifican cómo organizar el contenido actual. Los nombres entre corchetes son regiones semánticas propuestas; las páginas todavía no usan todas esas etiquetas HTML.
+
+Entregable 2 semana 1
+
+1.Pagina de inicio index html
+Encabezado con el nombre Rueda Libre y el mensaje de bienvenida
+Navegacion con enlaces a tarifas horarios y ubicacion
+Contenido principal con informacion de la empresa servicios pasos para alquilar y datos de contacto
+Secciones sobre quienes somos servicios cómo alquilar y dónde encontrarnos
+Articulos no aparecen como elementos separados en el archivo actual
+Contenido complementario no se muestra
+Pie con el nombre correo y año
+
+2.Página de horarios reservas html
+Encabezado con el título Nuestros Horarios
+Navegacion para volver al inicio y consultar las tarifas
+Contenido principal con los horarios de atencion de cada día
+Seccion de horarios con la lista de días y horas
+Articulos no aparecen como elementos separados en el archivo actual
+Contenido complementario no se muestra
+Enlace de contacto por correo
+Pie con el nombre correo y año
+
+3.Página de tarifas tarifas html
+Encabezado con el titulo Tarifas
+Navegacion para volver al inicio y consultar los horarios
+Contenido principal con los precios de bicicletas y recorridos guiados
+Seccion de tarifas de alquiler con una tabla y una nota
+Seccion de recorridos guiados con una tabla una nota un enlace a horarios y una imagen
+Articulos no aparecen como elementos separados en el archivo actual
+Contenido complementario no se muestra
+Pie con el nombre correo y año
