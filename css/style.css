@@ -1,0 +1,25 @@
+:root {
+--verde-ruta-botones-enlaces: #1E7A4F;
+--naranja-pedal-destacados-botones-secundarios: #F39A2B;
+--azul-noche-titulos-encabezados: #14213D;
+--crema-fondo-general: #FAF6EF;
+--gris-asfalto-texto-secundario-sobre-el-fondo-crema: #5B6470;
+
+  --fuente-titulos: "Montserrat", sans-serif;
+  --fuente-texto: "Open Sans", sans-serif;
+
+  --espacio-pq: 0.5rem;
+  --espacio-md: 1rem;
+  --espacio-gd: 3rem;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  background-color: var(--crema-fondo-general);
+  color: var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fuente-titulos);
+  color: var(--azul-noche-titulos-encabezados);
+}

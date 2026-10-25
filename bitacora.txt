@@ -113,7 +113,7 @@ Naranja Pedal sobre Crema
 
 Uso de colores
 fondo Crema
-titulos y texto principal Azul Noche sobre Crema
+titulos y Encabezados Azul Noche sobre Crema
 texto secundario Gris Asfalto sobre Crema
 botones Verde Ruta con letras blancas
 enlaces Verde Ruta sobre Crema
@@ -122,3 +122,5 @@ Los colores se aplicaran despues con CSS
 
 Usuario: Dani3VILL_99
 Repositorio: https://github.com/Daniel696996/rueda-libre.git
+
+Entregable dia 3

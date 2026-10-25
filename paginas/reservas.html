@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horarios y reservas | Rueda Libre</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
@@ -48,19 +56,19 @@
                     <legend>Tus datos</legend>
                     <p>
                         <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="100" title="Escribe tu nombre completo. Debe tener entre 3 y 100 caracteres.">
+                        <input type="text" id="nombre" name="nombre" title="Escribe tu nombre completo. Debe tener entre 3 y 100 caracteres." required>
                     </p>
                     <p>
                         <label for="documento">Número de documento:</label>
-                        <input type="text" id="documento" name="documento" required inputmode="numeric" minlength="6" maxlength="10" pattern="[0-9]{6,10}" title="Escribe entre 6 y 10 números, sin puntos ni espacios.">
+                        <input type="text" id="documento" name="documento" inputmode="numeric" pattern="[0-9]{6,10}" title="Escribe entre 6 y 10 números, sin puntos ni espacios." required>
                     </p>
                     <p>
                         <label for="correo">Correo electrónico:</label>
-                        <input type="email" id="correo" name="correo" pattern=".*@.*\.com$" required title="Escribe un correo con formato válido, por ejemplo nombre@correo.com.">
+                        <input type="email" id="correo" name="correo" pattern=".*@.*\.com$" title="Escribe un correo con formato válido, por ejemplo nombre@correo.com." required>
                     </p>
                     <p>
                         <label for="celular">Celular:</label>
-                        <input type="tel" id="celular" name="celular" required minlength="10" maxlength="10" pattern="3[0-9]{9}" inputmode="numeric" title="Escribe 10 números y comienza con 3.">
+                        <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}" title="Escribe 10 números y comienza con 3." required>
                     </p>
                 </fieldset>
 
