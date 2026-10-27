@@ -24,21 +24,9 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--azul-noche-titulos-encabezados);
 }
 
-#menu a {
-  color: var(--gris-asfalto);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  transition: color 0.2s ease;
+#menu a:hover {
+  color: var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
 }
-
-#menu a:hover,
-#menu a:focus {
-  color: var(--verde-ruta);
-  outline: 2px dashed var(--verde-ruta);
-  outline-offset: 2px;
-}
-
-#menu a.activo {
-  color: var(--verde-ruta);
-  font-weight: 600;
+#menu a.active {
+  color: var(--verde-ruta-botones-enlaces);
 }
