@@ -24,9 +24,20 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--azul-noche-titulos-encabezados);
 }
 
-#menu a:hover {
+#menu a {
   color: var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
 }
+
+.activo {
+  color: var(--verde-ruta-botones-enlaces);
+  font-weight: bold;
+}
+
 #menu a.active {
   color: var(--verde-ruta-botones-enlaces);
+}
+
+#menu a:hover,
+#menu a:focus {
+  color: var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
 }
