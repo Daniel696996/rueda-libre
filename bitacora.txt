@@ -124,3 +124,15 @@ Usuario: Dani3VILL_99
 Repositorio: https://github.com/Daniel696996/rueda-libre.git
 
 Entregable dia 3
+Elementos Heredados
+
+* de backgroun-color Heredo:
+- var(--crema-fonfo-general)
+
+* de color Heredo:
+- var(--gris-asfalfo-texto-secundario-sobre-el-fondo-crema)
+
+* de display no heredo nada
+
+* de font- family Heredo:
+- var(--fuente-texto)
