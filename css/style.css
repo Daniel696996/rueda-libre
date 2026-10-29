@@ -24,14 +24,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--azul-noche-titulos-encabezados);
 }
 
-#menu a {
-  color: var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
-}
-
-.activo {
-  color: var(--verde-ruta-botones-enlaces);
-  font-weight: bold;
-}
+#menu a { color: var(--gris-asfalto); }
+.activo { color: var(--verde-ruta); font-weight: 600; }
 
 #menu a.active {
   color: var(--verde-ruta-botones-enlaces);
@@ -39,5 +33,43 @@ h1, h2, h3, h4, h5, h6 {
 
 #menu a:hover,
 #menu a:focus {
-  color: var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
+  color: var(--naranja-pedal-destacados-botones-secundarios);
+}
+
+.boton {
+  display: inline-block;
+  background-color: var(--verde-ruta-botones-enlaces);
+  color: #ffffff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--fuente-titulos);
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.boton:hover {
+  background-color: #155838;
+  transform: translateY(-2px);
+}
+
+.boton:focus {
+  outline: 3px solid var(--naranja-pedal-destacados-botones-secundarios);
+  outline-offset: 2px;
+}
+
+input, textarea, select {
+  border: 1px solid var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: var(--fuente-texto);
+  color: var(--azul-noche-titulos-encabezados);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--verde-ruta-botones-enlaces);
+  box-shadow: 0 0 0 3px rgba(30, 122, 79, 0.25);
 }
