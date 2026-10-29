@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header id="gif">
         <h1>Rueda Libre</h1>
-        <a href="index.html"><img src="img/logo.jpg" alt="Rueda Libre, página de inicio" width="150"></a>
+        <a href="index.html"src="/rueda-libre/assets/gif/bike.gif" width="0"></a>
         <nav>
             <ul id ="menu">
                 <li><a href="paginas/tarifas.html" class="active">Tarifas de alquiler y recorridos</a></li>
@@ -35,15 +35,21 @@
 
         <section>
             <h2>Nuestros servicios</h2>
-            <article>
+            <article class="card">
+                <span class="etiqueta-nuevo">Nuevo</span>
+                <h3>Alquiler de bicicletas eléctricas</h3>
+                <p>Recorre Medellín sin esfuerzo con nuestras bicicletas eléctricas. Consulta las tarifas antes de reservar.</p>
+                <p><a href="paginas/tarifas.html" class="boton1">Ver tarifas</a></p>
+            </article>
+            <article class="card">
                 <h3>Alquiler de bicicletas por hora, día o semana</h3>
                 <p>Disponible para uso diario, semanal o mensual, con opciones de precios flexibles.</p>
             </article>
-            <article>
+            <article class="card">
                 <h3>Rutas guiadas por la ciudad y sus alrededores</h3>
                 <p>Ofrecemos rutas guiadas para explorar Medellín y sus alrededores, ideales para turistas y locales.</p>
             </article>
-            <article>
+            <article class="card">
                 <h3>Mantenimiento y reparación de bicicletas</h3>
                 <p>Contamos con un taller de mantenimiento y reparación para asegurar que nuestras bicicletas estén siempre en óptimas condiciones.</p>
             </article>
@@ -67,14 +73,14 @@
                 <li>Elige la bicicleta que deseas alquilar y completa el proceso de alquiler</li>
                 <li>Recoge tu bicicleta en la tienda o disfruta del servicio de entrega y recogida.</li>
             </ol>
-            <p><a href="paginas/reservas.html" class="boton">Consultar horarios y reservar una bicicleta</a></p>
+            <p><a href="paginas/reservas.html" class="boton1">Consultar horarios y reservar una bicicleta</a></p>
         </section>
 
         <section>
             <h2>Imágenes de ciclismo</h2>
-            <img src="img/bike.jpg" alt="Silueta de una persona montando bicicleta" width="250">
-            <img src="img/image3.jpg" alt="Ciclista pedaleando en una ruta" width="200">
-            <img src="img/road.jpg" alt="Grupo de ciclistas disfrutando de un recorrido" width="200">
+            <img src="/rueda-libre/assets/img/image1.jpg" alt="Silueta de una persona montando bicicleta" width="200">
+            <img src="/rueda-libre/assets/img/logo.jpg" alt="Ciclista pedaleando en una ruta" width="193">
+            <img src="/rueda-libre/assets/img/road.jpg" alt="Grupo de ciclistas disfrutando de un recorrido" width="233">
         </section>
 
         <section id="encuentranos">
@@ -83,6 +89,8 @@
             <p><a href="https://maps.app.goo.gl/39smMRAee4DwYD9FA" class="boton">Ver la ubicación de Rueda Libre en Google Maps</a></p>
             <p><a href="mailto:hola@ruedalibre.example" class="boton">Enviar un correo a hola@ruedalibre.example</a></p>
         </section>
+        <!-- MiniReto 12: botón flotante de WhatsApp con la paleta del proyecto. -->
+        <a href="https://wa.me/573000000000" class="btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">WhatsApp</a>
     </main>
 
     <footer>

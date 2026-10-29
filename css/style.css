@@ -1,16 +1,21 @@
+/* ==========================================
+   1. VARIABLES Y CONFIGURACIÓN GLOBAL
+   ========================================== */
 :root {
---verde-ruta-botones-enlaces: #1E7A4F;
---naranja-pedal-destacados-botones-secundarios: #F39A2B;
---azul-noche-titulos-encabezados: #14213D;
---crema-fondo-general: #FAF6EF;
---gris-asfalto-texto-secundario-sobre-el-fondo-crema: #5B6470;
-
+  --verde-ruta-botones-enlaces: #1E7A4F;
+  --naranja-pedal-destacados-botones-secundarios: #F39A2B;
+  --azul-noche-titulos-encabezados: #14213D;
+  --crema-fondo-general: #FAF6EF;
+  --gris-asfalto-texto-secundario-sobre-el-fondo-crema: #5B6470;
   --fuente-titulos: "Montserrat", sans-serif;
   --fuente-texto: "Open Sans", sans-serif;
-
   --espacio-pq: 0.5rem;
   --espacio-md: 1rem;
   --espacio-gd: 3rem;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -19,63 +24,14 @@ body {
   color: var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--fuente-titulos);
   color: var(--azul-noche-titulos-encabezados);
-}
-
-#menu a { color: var(--gris-asfalto); }
-.activo { color: var(--verde-ruta); font-weight: 600; }
-
-#menu a.active {
-  color: var(--verde-ruta-botones-enlaces);
-}
-
-#menu a:hover,
-#menu a:focus {
-  color: var(--naranja-pedal-destacados-botones-secundarios);
-}
-
-.boton {
-  display: inline-block;
-  background-color: var(--verde-ruta-botones-enlaces);
-  color: #ffffff;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-family: var(--fuente-titulos);
-  font-weight: 600;
-  transition: background-color 0.2s ease, transform 0.15s ease;
-}
-
-.boton:hover {
-  background-color: #155838;
-  transform: translateY(-2px);
-}
-
-.boton:focus {
-  outline: 3px solid var(--naranja-pedal-destacados-botones-secundarios);
-  outline-offset: 2px;
-}
-
-input, textarea, select {
-  border: 1px solid var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
-  padding: 0.75rem;
-  border-radius: 8px;
-  background-color: #ffffff;
-  font-family: var(--fuente-texto);
-  color: var(--azul-noche-titulos-encabezados);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-input:focus, textarea:focus, select:focus {
-  outline: none;
-  border-color: var(--verde-ruta-botones-enlaces);
-  box-shadow: 0 0 0 3px rgba(30, 122, 79, 0.25);
-}
-
-* {
-  box-sizing: border-box;
 }
 
 main {
@@ -84,11 +40,45 @@ main {
   padding: 0 1rem;
 }
 
-header, .portada {
+/* ==========================================
+   2. ENCABEZADO Y NAVEGACIÓN
+   ========================================== */
+header,
+.portada {
   min-height: 80vh;
 }
 
-section article {
+#menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+#menu a {
+  color: var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
+}
+
+.activo,
+#menu a.active {
+  color: var(--verde-ruta-botones-enlaces);
+  font-weight: 600;
+}
+
+#menu a:hover,
+#menu a:focus-visible {
+  color: var(--naranja-pedal-destacados-botones-secundarios);
+}
+
+/* ==========================================
+   3. COMPONENTES (TARJETAS Y BOTONES)
+   ========================================== */
+.card {
+  position: relative;
   background-color: #ffffff;
   padding: 1.5rem;
   border: 1px solid #e3e6f0;
@@ -96,19 +86,72 @@ section article {
   margin-bottom: 1.5rem;
 }
 
-section article img {
+.card img {
   width: 100%;
   height: auto;
   display: block;
 }
 
+.boton,
+.boton1 {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--fuente-titulos);
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.boton {
+  background-color: var(--verde-ruta-botones-enlaces);
+  color: #ffffff;
+}
+
+.boton1 {
+  background-color: var(--naranja-pedal-destacados-botones-secundarios);
+  color: var(--azul-noche-titulos-encabezados);
+}
+
+.boton:hover {
+  background-color: #155838;
+  transform: translateY(-2px);
+}
+
+.boton1:hover {
+  background-color: #e58b1b;
+  transform: translateY(-2px);
+}
+
+.boton:focus-visible,
+.boton1:focus-visible {
+  outline: 3px solid var(--azul-noche-titulos-encabezados);
+  outline-offset: 3px;
+}
+
+.etiqueta-nuevo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--naranja-pedal-destacados-botones-secundarios);
+  color: var(--azul-noche-titulos-encabezados);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 999px;
+}
+
+/* ==========================================
+   4. TABLAS Y FORMULARIOS
+   ========================================== */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 2rem;
 }
 
-th, td {
+th,
+td {
   padding: 0.75rem 1rem;
   border: 1px solid var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
   text-align: left;
@@ -132,6 +175,18 @@ form label {
   font-weight: 600;
 }
 
+input:not([type="radio"]):not([type="checkbox"]),
+textarea,
+select {
+  border: 1px solid var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: var(--fuente-texto);
+  color: var(--azul-noche-titulos-encabezados);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
@@ -146,13 +201,73 @@ form textarea {
   border-radius: 6px;
 }
 
-#menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+input:not([type="radio"]):not([type="checkbox"]):focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--verde-ruta-botones-enlaces);
+  box-shadow: 0 0 0 3px rgba(30, 122, 79, 0.25);
 }
 
-#menu li {
-  display: inline-block;
-  margin-right: 1.5rem;
+/* ==========================================
+   5. ELEMENTOS FLOTANTES (WHATSAPP) Y FOOTER
+   ========================================== */
+/* MiniReto 12: WhatsApp usa Verde Ruta con texto blanco; al pasar el cursor usa Naranja Pedal y Azul Noche, combinación apta según la bitácora. */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--verde-ruta-botones-enlaces);
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: var(--naranja-pedal-destacados-botones-secundarios);
+  color: var(--azul-noche-titulos-encabezados);
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus-visible {
+  transform: scale(1.05);
+}
+
+.btn-whatsapp:focus-visible {
+  outline: 3px solid var(--azul-noche-titulos-encabezados);
+  outline-offset: 3px;
+}
+
+footer {
+  padding: 0 1rem 5rem;
+}
+
+@media (max-width: 480px) {
+  .btn-whatsapp {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+#gif {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets/gif/bike.gif") no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portada {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets/gif/bike.gif") no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
