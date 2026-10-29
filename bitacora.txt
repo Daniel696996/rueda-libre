@@ -139,3 +139,6 @@ Elementos Heredados
 
 #2
 Lo que pasa con el css, esque prioriza un id antes que un class y no permite aplicar lo que pide la clase
+
+#3
+revise  Computed en las Devtools antes y despues del cambio, Antes, el ancho aumentaba al sumarle el relleno y los bordes Despues de aplicar border-box, esta mantuvo el ancho establecido
