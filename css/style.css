@@ -1,6 +1,3 @@
-/* ==========================================
-   1. VARIABLES Y CONFIGURACIÓN GLOBAL
-   ========================================== */
 :root {
   --verde-ruta-botones-enlaces: #1E7A4F;
   --naranja-pedal-destacados-botones-secundarios: #F39A2B;
@@ -24,12 +21,7 @@ body {
   color: var(--gris-asfalto-texto-secundario-sobre-el-fondo-crema);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   font-family: var(--fuente-titulos);
   color: var(--azul-noche-titulos-encabezados);
 }
@@ -40,9 +32,6 @@ main {
   padding: 0 1rem;
 }
 
-/* ==========================================
-   2. ENCABEZADO Y NAVEGACIÓN
-   ========================================== */
 header,
 .portada {
   min-height: 80vh;
@@ -74,9 +63,6 @@ header,
   color: var(--naranja-pedal-destacados-botones-secundarios);
 }
 
-/* ==========================================
-   3. COMPONENTES (TARJETAS Y BOTONES)
-   ========================================== */
 .card {
   position: relative;
   background-color: #ffffff;
@@ -84,12 +70,6 @@ header,
   border: 1px solid #e3e6f0;
   border-radius: 12px;
   margin-bottom: 1.5rem;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .boton,
@@ -129,7 +109,7 @@ header,
   outline-offset: 3px;
 }
 
-.etiqueta-nuevo {
+.nuevo {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -141,9 +121,6 @@ header,
   border-radius: 999px;
 }
 
-/* ==========================================
-   4. TABLAS Y FORMULARIOS
-   ========================================== */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -209,11 +186,7 @@ select:focus {
   box-shadow: 0 0 0 3px rgba(30, 122, 79, 0.25);
 }
 
-/* ==========================================
-   5. ELEMENTOS FLOTANTES (WHATSAPP) Y FOOTER
-   ========================================== */
-/* MiniReto 12: WhatsApp usa Verde Ruta con texto blanco; al pasar el cursor usa Naranja Pedal y Azul Noche, combinación apta según la bitácora. */
-.btn-whatsapp {
+.wspp {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
@@ -228,17 +201,17 @@ select:focus {
   transition: transform 0.2s ease;
 }
 
-.btn-whatsapp:hover {
+.wspp:hover {
   background-color: var(--naranja-pedal-destacados-botones-secundarios);
   color: var(--azul-noche-titulos-encabezados);
 }
 
-.btn-whatsapp:hover,
-.btn-whatsapp:focus-visible {
+.wspp:hover,
+.wspp:focus-visible {
   transform: scale(1.05);
 }
 
-.btn-whatsapp:focus-visible {
+.wspp:focus-visible {
   outline: 3px solid var(--azul-noche-titulos-encabezados);
   outline-offset: 3px;
 }
@@ -248,7 +221,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .btn-whatsapp {
+  .wspp {
     bottom: 1rem;
     right: 1rem;
   }

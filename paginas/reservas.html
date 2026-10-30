@@ -3,60 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horarios y reservas | Rueda Libre</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
+    <meta name="description" content="Consulta los horarios de atención y reserva una bicicleta con Rueda Libre.">
+    <title>Reserva tu bicicleta | Rueda Libre</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="portada">
-                <h1>Horarios y reservas</h1>
-        <a href="../index.html" src="/rueda-libre/assets/gif/bike.gif" alt="Rueda Libre, página de inicio" width="150"></a>
+        <h1>Rueda Libre</h1>
+        <a href="../index.html"><img src="../assets/img/logo.jpg" alt="Logo de Rueda Libre" width="150"></a>
         <nav>
             <ul id="menu">
-                <li><a href="../index.html" class="active">Inicio</a></li>
-                <li><a href="tarifas.html"class = "active">Tarifas de alquiler y recorridos</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tarifas.html">Tarifas y rutas</a></li>
+                <li><a href="reservas.html" class="active" aria-current="page">Reservas</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <h2>Reserva tu bicicleta</h2>
+
         <section>
-            <h2>Horarios de atención</h2>
+            <h3>Horarios de atención</h3>
             <p>Estos son los horarios de atención:</p>
             <dl>
-                <dt><strong>Lunes</strong></dt>
-                <dd>7:00 am - 6:00 pm</dd>
-                <dt><strong>Martes</strong></dt>
-                <dd>7:00 am - 6:00 pm</dd>
-                <dt><strong>Miércoles</strong></dt>
-                <dd>7:00 am - 6:00 pm</dd>
-                <dt><strong>Jueves</strong></dt>
-                <dd>7:00 am - 6:00 pm</dd>
-                <dt><strong>Viernes</strong></dt>
-                <dd>7:00 am - 6:00 pm</dd>
-                <dt><strong>Sábado</strong></dt>
-                <dd>8:00 am - 4:00 pm</dd>
-                <dt><strong>Domingo</strong></dt>
-                <dd>8:00 am - 4:00 pm</dd>
-                <dt><strong>Festivos</strong></dt>
-                <dd>8:00 am - 4:00 pm</dd>
+                <dt><strong>Lunes a viernes</strong></dt>
+                <dd>7:00 a. m. a 7:00 p. m.</dd>
+                <dt><strong>Sábados, domingos y festivos</strong></dt>
+                <dd>6:00 a. m. a 2:00 p. m.</dd>
             </dl>
         </section>
 
         <section>
-            <h2>Formulario de reserva</h2>
+            <h3>Formulario de reserva</h3>
             <form action="#" method="post">
                 <fieldset>
                     <legend>Tus datos</legend>
                     <p>
                         <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" title="Escribe tu nombre completo. Debe tener entre 3 y 100 caracteres." required>
+                        <input type="text" id="nombre" name="nombre" minlength="3" maxlength="100" title="Escribe tu nombre completo. Debe tener entre 3 y 100 caracteres." required>
                     </p>
                     <p>
                         <label for="documento">Número de documento:</label>
@@ -64,7 +52,7 @@
                     </p>
                     <p>
                         <label for="correo">Correo electrónico:</label>
-                        <input type="email" id="correo" name="correo" pattern=".*@.*\.com$" title="Escribe un correo con formato válido, por ejemplo nombre@correo.com." required>
+                        <input type="email" id="correo" name="correo" pattern=".*@.*\.com" title="Escribe un correo con formato válido y termina en com." required>
                     </p>
                     <p>
                         <label for="celular">Celular:</label>
@@ -89,16 +77,13 @@
                     </p>
                     <p>Plan de alquiler:</p>
                     <p>
-                        <input type="radio" id="plan-hora" name="plan" value="una-hora" required>
-                        <label for="plan-hora">Una hora</label>
+                        <label for="plan-hora"><input type="radio" id="plan-hora" name="plan" value="una-hora" required> Una hora</label>
                     </p>
                     <p>
-                        <input type="radio" id="plan-medio-dia" name="plan" value="medio-dia">
-                        <label for="plan-medio-dia">Medio día</label>
+                        <label for="plan-medio-dia"><input type="radio" id="plan-medio-dia" name="plan" value="medio-dia"> Medio día</label>
                     </p>
                     <p>
-                        <input type="radio" id="plan-dia-completo" name="plan" value="dia-completo">
-                        <label for="plan-dia-completo">Día completo</label>
+                        <label for="plan-dia-completo"><input type="radio" id="plan-dia-completo" name="plan" value="dia-completo"> Día completo</label>
                     </p>
                     <p>
                         <label for="cantidad">Cantidad de bicicletas (de 1 a 6):</label>
@@ -113,8 +98,7 @@
                         <textarea id="comentarios" name="comentarios" maxlength="300" rows="4" cols="40" title="Puedes escribir hasta 300 caracteres."></textarea>
                     </p>
                     <p>
-                        <input type="checkbox" id="politicas" name="aceptaPoliticas" value="si" required>
-                        <label for="politicas">Acepto las políticas de alquiler.</label>
+                        <label for="politicas"><input type="checkbox" id="politicas" name="aceptaPoliticas" value="si" required> Acepto las políticas de alquiler.</label>
                     </p>
                 </fieldset>
 
@@ -123,11 +107,11 @@
         </section>
 
         <aside>
-            <h2>Contacto</h2>
-            <p><a class="boton" href="mailto:info@ruedalibre.com">Enviar un correo a info@ruedalibre.com</a></p>
+            <h3>Contacto</h3>
+            <!-- Error encontrado el correo de contacto no coincidia con el del pie de pagina se unifico -->
+            <p><a class="boton" href="mailto:info@ruedalibre.co">Enviar un correo a info@ruedalibre.co</a></p>
         </aside>
-        <!-- MiniReto 12: botón flotante de WhatsApp con la paleta del proyecto. -->
-        <a href="https://wa.me/573000000000" class="btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">WhatsApp</a>
+        <a href="https://wa.me/573000000000" class="wspp" target="_blank" rel="noopener">WhatsApp</a>
     </main>
 
     <footer>
@@ -137,3 +121,8 @@
     </footer>
 </body>
 </html>
+
+
+
+
+
