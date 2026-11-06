@@ -142,3 +142,130 @@ Lo que pasa con el css, esque prioriza un id antes que un class y no permite apl
 
 #3
 revise  Computed en las Devtools antes y despues del cambio, Antes, el ancho aumentaba al sumarle el relleno y los bordes Despues de aplicar border-box, esta mantuvo el ancho establecido
+
+Cierre de la semana
+Resumen de cada dia
+
+Dia 0
+Prepare la carpeta del proyecto y la pagina principal
+Anote la direccion local la respuesta correcta y el error que aparecia al buscar una pagina inexistente
+Tambien escribi para que sirven las partes que organizan el contenido cambian su apariencia y agregan acciones
+
+Dia 1
+Organice el inicio con quienes somos servicios beneficios como alquilar y donde encontrarnos
+Cada servicio tiene su nombre y una explicacion y agregue cuatro pasos y una lista de ventajas
+Puse tres fotos con una descripcion y enlaces al mapa al correo y a la ubicacion dentro de la pagina
+
+Dia 2
+Prepare las tarifas de bicicletas y los recorridos en dos tablas
+Ordene los titulos y los datos para que se entienda que precio corresponde a cada bicicleta o recorrido
+Agregue lo que incluyen las tarifas los horarios de salida y lo que hay que llevar
+
+Dia 3
+Conecte las paginas de inicio tarifas y reservas para poder ir de una a otra
+Deje el mismo menu y el mismo pie con el nombre el correo y el ano
+Agregue enlaces para reservar y anote las direcciones usadas en cada pagina
+
+Dia 4
+Ordene cada pagina con el encabezado el menu el contenido y el pie
+Separe los servicios las tablas y el formulario para que cada parte tenga su propio lugar
+Deje Nuevo como una etiqueta pequena sobre la tarjeta sin mover el texto
+
+Dia 5
+Separe la reserva en Tus datos Tu alquiler y Confirmacion
+Agregue campos para el nombre documento correo celular fecha tipo de bicicleta plan cantidad y comentarios
+Cada campo tiene una etiqueta para que se entienda que informacion se debe escribir o elegir
+
+Dia 6
+Agregue reglas para revisar el nombre el documento el correo el celular la fecha la cantidad y las politicas
+Anote ejemplos de datos que debian aceptarse o rechazarse
+Quedo pendiente confirmar en el navegador los resultados de todas las pruebas
+
+Dia 7
+Revise que las fotos tuvieran una descripcion y que los titulos y enlaces se entendieran
+Compare los colores para usar letras que se puedan leer sobre cada fondo
+Deje pendiente recorrer todo el sitio con el teclado y revisar la version publicada
+
+Dia 8
+Conecte la misma hoja de estilos a las tres paginas
+Use Montserrat en los titulos Open Sans en los textos y los colores del proyecto
+Anote que el texto toma su letra y color de la pagina mientras el fondo no pasa al parrafo
+
+Dia 9
+Ajuste el menu para que solo se marque la pagina actual
+Revise por que una regla del menu tenia mas prioridad que una clase sencilla
+Deje una marca visible al pasar el mouse y al moverse con el teclado sin alterar las otras reglas
+
+Dia 10
+Hice que el relleno y los bordes queden dentro del ancho de cada caja
+Centre el contenido y limite su ancho para que las lineas no queden demasiado largas
+Separe las tarjetas ordene las tablas y el formulario y deje pendiente anotar los numeros exactos de antes y despues
+
+Dia 11
+No aparece una instruccion aparte para este dia entre las capturas recibidas
+
+Dia 12
+Destaque las bicicletas electricas con Nuevo y agregue WhatsApp en las tres paginas
+Deje espacio al final para que el boton no tape el pie y ordene los estilos repetidos
+Quedaron pendientes la revision publicada y la subida de la version
+
+Que Mejoraria
+pondria un boton para poner la pagina en modo oscuro, minimizaria el header o en su defecto poner todo el Backgound con la imagen gif
+pondria un login para tener usuarios fieles registrados y que reciban descuentos en sus arrendamientos 
+tambien como adiconal por fuera de la web simplificaria la informacion proporcionada por el cliente, ya que estamos viendo las Historioas de usuario me hubiera gustado entender lo que pide el cliente, per entiendo que hace parte del aprendizaje
+y por mi parte esas son las cosas que mejoraria, me gusto mucho desarrollar el entregable, con dificultades pero nada que no se pueda solucionar
+
+Entregable semana 2 
+microreto 3
+en las devtotol con:
+1280px se ven 4 columnas superiores y 2 inferiores
+900px se ven 3 columnas, 3 arriba, 3 en el medio y 1 abajo 
+500px se ve 1 columna por desplazamiento es decir solo se ve una columna mientras scroleo
+
+minireto 4
+Portada : Grid
+Por que Grid: son dos columnas iguales (texto e imagen) que se definen desde el contenedor, y en celulares basta con pasar a una sola columna
+
+Galeria: Grid
+Por qué Grid: es una cuadricula de tres columnas iguales tambien hace que todas las fotos queden del mismo tamaño aunque sean distintas
+
+Reservas: Grid
+Por qué Grid: hay que acomodar dos cuadros lado a lado con proporciones definidas, y hace que ambos tengan la misma altura
+
+Fila del formulario: Grid
+Por qué Grid: son dos campos de igual ancho, alineados en columnas
+
+Encabezado: Flexbox
+es una sola fila (logo a la izquierda, menu a la derecha)los separa, deja que el menú baje de línea en pantallas pequeñas, y .logo y #menu son filas pequeñas de elementos alineados
+
+Pie de página: Flexbox
+Por qué Flexbox: son tres bloques de contenido en una sola fila, de ancho variable, que se acomodan solos y bajan de línea cuando no caben, el padding inferior de 5rem evita que el boton fijo de WhatsApp tape el texto
+
+MiniReto 5
+
+Problemas responsive encontrados y como se resolvieron
+1. La foto de la portada tenia class="portada" igual que la seccion, entonces heredaba el grid, el padding y el min-height de 55vh y se estiraba
+Solucion: quite la clase de la imagen y dejo que la regla .portada img la controle
+
+2. Los servicios usaban la clase .portada que tenia dos columnas fijas, en 360 px cada tarjeta quedaba muy angosta
+Solucion: cree la clase .servicios con una columna en celular, dos en tablet y cuatro en escritorio
+
+3. El formulario podia ensanchar la pantalla en celular porque el fieldset no se encoge por defecto y la fila de documento y celular tenia dos columnas fijas
+Solucion: form fieldset con min-width: 0, .fila-doble en una columna y dos columnas desde 768 px, y los campos con letra de 16 px
+
+4. Las tablas tenian relleno de 0.75rem 1rem y letra de 1rem, por eso obligaban a desplazarse de lado
+Solucion: relleno y letra mas pequenos en celular y se recuperan desde tablet
+
+5. El menu (una lista ul) traia relleno izquierdo por defecto y no quedaba centrado en celular
+Solucion: #menu con margin: 0, padding: 0 y list-style: none
+
+6. El encabezado con el GIF ocupaba 100vh en celular y empujaba el contenido hacia abajo
+Solucion: 60vh en celular y 100vh desde tablet
+
+
+Pruebas con DevTools (modo dispositivo)
+360 px: hay scroll horizontal, las tablas se leen completas, el menu queda centrado debajo del nombre
+
+768 px: el encabezado esta en una fila la galeria tiene tres columnas la fila del formulario permite hacer scroll
+
+1280 px: el servicio aparece  en cuatro columnas reservas lado a lado con la misma altura, el footer esta alineado con el contenido

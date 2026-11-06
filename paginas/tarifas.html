@@ -7,23 +7,22 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
+    <header id="gif">
+    <div class="logo">
         <h1>Rueda Libre</h1>
-        <a href="../index.html"><img src="../img/logo.jpg" alt="Rueda Libre, página de inicio" width="150"></a>
-        <nav>
-            <ul id="menu">
-                <li><a href="../index.html" class="active">Inicio</a></li>
-                <li><a href="reservas.html" class="active">Horarios y reserva</a></li>
-            </ul>
-        </nav>
-    </header>
+        <a href="../index.html"><img src="../assets/img/logo.jpg" alt="Rueda Libre" width="80"></a>
+    </div>
+    <nav>
+        <ul id="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="tarifas.html" class="active">Tarifas y rutas</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
         <p>En Rueda Libre, ofrecemos tarifas competitivas para el alquiler de bicicletas en Medellín</p>
@@ -101,7 +100,7 @@
                 </tbody>
             </table>
             <figure>
-                <img src="../img/image2.jpg" alt="Ciclista de montaña sobre una bicicleta roja en un sendero" width="250">
+                <img src="../assets/img/image2.jpg" alt="Ciclista de montaña sobre una bicicleta roja en un sendero" width="250">
             </figure>
         </section>
 
@@ -111,13 +110,30 @@
             <p>Los recorridos guiados están sujetos a disponibilidad y requieren reserva previa.</p>
         </aside>
 
-        <p><a href="reservas.html" class="boton">Consultar horarios y reservar una bicicleta</a></p>
+        <p><a href="reservas.html" class="boton1">Consultar horarios y reservar una bicicleta</a></p>
+        <a href="https://wa.me/573000000000" class="wspp" target="_blank" rel="noopener">WhatsApp</a>
     </main>
 
     <footer>
-        <p>Rueda Libre</p>
-        <p>Correo de contacto: <a href="mailto:info@ruedalibre.co">info@ruedalibre.co</a></p>
-        <p>&copy; 2026</p>
+        <div>
+            <p>Rueda Libre</p>
+            <p>Alquiler de bicicletas en Medellín</p>
+                    <p>&copy; 2026</p>
+        </div>
+
+        <div>
+            <p>Correo de contacto: <a href="mailto:info@ruedalibre.co">info@ruedalibre.co</a></p>
+                      <p>Teléfono de contacto: <a href="tel:+573000000000">+57 300 000 0000</a></p>
+        </div>
+
+        <div>
+            <p>Horarios de atención</p>
+            <ul>
+                <li>Lunes a viernes: 5:00 AM - 7:00 PM</li>
+                <li>Sábados: 6:00 AM - 2:00 PM</li>
+                <li>Domingos y festivos: 6:00 AM - 2:00 PM</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
