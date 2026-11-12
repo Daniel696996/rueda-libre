@@ -274,3 +274,8 @@ ENTREGABLE DE BOOTSTRAP
 inverti 1 hora a aprender las cosas basicas de bootstrap y aplicarlo a mi codigo, fue mas facil usarlo ya que con las clases ya predefinidas todo fue mas rapido y autonomo 
 senti automatizacion total, ya que simplemente con las clases y sabiendo para que es cada comando se me hizo mucho mas facil aplicarlo sin corregir tanto
 y siento que perdi libertad al mismo tiempo para ser mas creativo ya que al estar las clases y todo ya predefinido, siento que eso lo ata a uno a un mismo diseño y siento que ahi es donde uno entra en clificto, gano automatizacion y velocidad pero pierdo precisamente la misma personalizacion
+
+SEMANA 3 MINIRETO 1
+Cree el boton con clases listas que trae bootstrap que permiten ser mas rapido, y eficiente, aunque no me permite perzonalizalo 100% a mi gusta
+y el boton de Tailwind lo cree con comandos de diseño uno por uno hasta formar lo que queria es un poco mas lento que boodstarp para mi gusto pero si me da la perzonalizacion que quiero
+la principal diferencia que note fue que Boodstrap ya trae sus componentes pre armados, mientras que tailwind nos da las herramientas y podemos crearlo poco a poco, la diferencia es la variedad de perzonalizacion que permiten principalmente por estas cosas
