@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit de Componentes - Rueda Nocturna</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-950 text-white">
+
+<header class="w-full bg-slate-900 px-5 py-4 shadow-md sm:px-8">
+        <div class="mx-auto flex max-w-5xl flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <h1 class="text-2xl font-bold text-amber-300">Kit de componentes</h1>
+<a href="index.html" class="text-amber-300 underline">Volver a Rueda Nocturna</a>
+        </div>
+    </header>
+    <main class="mx-auto max-w-5xl px-5 py-12 space-y-12">
+
+        
+        <section class="space-y-5 p-6 flex justify-center">
+            <div class="flex flex-wrap flex-col gap-4 p-6 bg-slate-900/50 rounded-xl items-center shadow-lg hover:shadow-gray-200 transition-shadow">
+                <h2 class="text-white text-4xl md:text-6xl font-bold mt-3 border-b-2 border-green-500 rounded-lg pb-2">Botones</h2>
+                <div class="flex flex-row items-center gap-4 mt-4">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors">Aceptar</button>
+                    <button class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors">Cancelar</button>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">Reiniciar</button>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="max-w-xl mx-auto space-y-4">
+            <div class="bg-slate-900/50 border-l-4 border-blue-500 text-blue-300 p-4 rounded-lg shadow-sm">
+                <p class="font-bold">Información</p>
+                <p class="text-sm">Nuevas Rutas Disponibles</p>
+            </div>
+
+            <div role="status" class="bg-slate-900/50 border-l-4 border-green-500 text-green-300 p-4 rounded-lg shadow-sm">
+                <p class="font-bold">¡Operación exitosa!</p>
+                <p class="text-sm">Agenda correctamente tu bicicleta</p>
+            </div>
+
+            <div class="bg-slate-900/50 border-l-4 border-yellow-500 text-yellow-300 p-4 rounded-lg shadow-sm">
+                <p class="font-bold">Advertencia</p>
+                <p class="text-sm">¡No olvides tus documentos antes de venir!</p>
+            </div>
+        </section><br>
+
+        
+        <section class="max-w-xl mx-auto rounded-xl bg-slate-900/50 p-6 space-y-5 border border-slate-800">
+            <h2 class="text-2xl font-bold text-white">Campos de formulario</h2>
+            <div class="space-y-4">
+                <div>
+                    <label for="correo" class="block mb-2 font-medium">Correo electrónico</label>
+                    <input id="correo" type="email" aria-describedby="ayuda-correo" placeholder="correo@ejemplo.com" class="w-full rounded-lg bg-white p-3 text-slate-950 focus:outline focus:outline-4 focus:outline-amber-300">
+                    <p id="ayuda-correo" class="mt-2 text-sm text-slate-300">Utiliza una dirección válida.</p>
+                </div>
+                <div>
+                    <label for="celular" class="block mb-2 font-medium">Celular</label>
+                    <input id="celular" type="tel" pattern="3[0-9]{9}" inputmode="numeric" aria-describedby="ayuda-celular" placeholder="3001234567" class="w-full rounded-lg bg-white p-3 text-slate-950 focus:outline focus:outline-4 focus:outline-amber-300">
+                    <p id="ayuda-celular" class="mt-2 text-sm text-slate-300">Diez números, comenzando por 3.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

@@ -279,3 +279,24 @@ SEMANA 3 MINIRETO 1
 Cree el boton con clases listas que trae bootstrap que permiten ser mas rapido, y eficiente, aunque no me permite perzonalizalo 100% a mi gusta
 y el boton de Tailwind lo cree con comandos de diseño uno por uno hasta formar lo que queria es un poco mas lento que boodstarp para mi gusto pero si me da la perzonalizacion que quiero
 la principal diferencia que note fue que Boodstrap ya trae sus componentes pre armados, mientras que tailwind nos da las herramientas y podemos crearlo poco a poco, la diferencia es la variedad de perzonalizacion que permiten principalmente por estas cosas
+
+SEMANA 3 MINIRETO 4
+Reglas del Kit
+
+* Border Radius
+- Contenedores principales, tarjetas y secciones: rounded-xl
+- Elementos interactivos: rounded-lg
+
+* Spacing
+- Espaciado interno estandar para contenedores de tarjetas: p-6
+- Separación vertical entre elementos de seccion: space-y-4 / space-y-5
+- Espaciado general del contenedor principal (main): space-y-12 con padding px-5 py-12
+
+* Color Palette
+- vfondo general: bg-slate-950 con texto principal text-white
+- Tarjetas y contenedores secundarios: bg-slate-900/50 o bg-slate-900
+- Color de acento: amber-300
+- Alertas (corrección de contraste sobre fondos oscuros):
+- Informacion: Bordes y acentos border-blue-500, texto text-blue-300
+- Exito: Bordes y acentos border-green-500, texto text-green-300
+- Advertencia: Bordes y acentos border-yellow-500, texto text-yellow-300
