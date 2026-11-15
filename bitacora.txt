@@ -326,3 +326,6 @@ Pruebas de Formulario
 5. y al no poner el @ en el Email, tambien lo toma como invalido
 6. y si no se aceptan los terminos y condiciones el formilario no se envia y pide que se acepten
 7, al llenar los campos con datos que cumplan con las reglas declaradas, deja enviarlo correctamente
+
+minireto 11
+ seccion de planes cree la seccion comercial con tres tarjetas usando grid flexbox y una tarjeta de pareja, priorizando el color oscuro que mantiene la web
