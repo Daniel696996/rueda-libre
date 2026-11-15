@@ -300,3 +300,19 @@ Reglas del Kit
 - Informacion: Bordes y acentos border-blue-500, texto text-blue-300
 - Exito: Bordes y acentos border-green-500, texto text-green-300
 - Advertencia: Bordes y acentos border-yellow-500, texto text-yellow-300
+
+Entregable MiniReto 8
+Curva de Aprendizaje:
+me ayudo mucho el practicar todos los dias realizando el proyecto y con los errores que resolvia investigando con tailwind tambien guiandome de mis companeros y con bootstrap aunque no lo vi por completo me ayudo mucho realizar una de las actividades ya que comprendi la diferencia que este tiene con tailwind y como exige entender las bases de css desde el principio
+
+Perzonalizacion:
+en todo lo que vi realmente me gusto usar mas css pero entre tailwind y bootstrap me gusto mas tailwind por como da mas personalizacion a la pagina en especial en rueda nocturna me gusta el estilo que le di y ese enfoque a la noche ya que pude adaptar cada color y cada componente con el amarillo farol y los tonos oscuros exactos sin atarme a plantillas predefinidas que hacen que todas las webs se parezcan
+
+tamano final:
+al generar el archivo css minificado con la opcion de la cli note que el resultado es sumamente liviano pesando aproximadamente 12.5 kb gracias al tree shaking de tailwind que elimina automaticamente todo lo que no se usa superando en optimizacion a frameworks mas pesados que cargan estilos y scripts innecesarios
+
+casos de uso:
+segun lo que vi desarrollando el proyecto yo usaria tailwind para proyectos mas minuciosos que requieran cosas mas especificas o en algo personal como mi portafolio ya que al ser tan personalizable iria con mi estilo y me daria esa libertad de hacer y poner lo que yo quiera y bootstrap para proyectos rapidos o que no sean mios como tal ya que por sus clases maquetadas seria mas rapido y facil darle estilo a una web corporativa o estandar donde no se busque tanta originalidad visual
+
+Recomendación final para Rueda Libre:
+Recomiendo mantener y desarrollar las siguientes fases de Rueda Libre con Tailwind CSS, el aspecto visual nocturna del negocio con esa estetica oscura la hace ver elegante y hasta familiar, en mi cruva de aprendizaje aprendi lo que era el cansio visual y el estilo integrado con tailwind no me genero esto

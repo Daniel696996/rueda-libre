@@ -2,3 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-farol {
+    @apply inline-block bg-farol text-slate-950 font-semibold px-6 py-3 rounded-full hover:brightness-110 shadow-md transition-all focus:outline-none focus:ring-2 focus:ring-farol/50 text-center;
+  }
+
+  .btn-card {
+    @apply block w-full bg-farol text-slate-950 font-semibold py-3 rounded-full hover:brightness-110 transition-all shadow-sm text-center;
+  }
+
+  .nav-link {
+    @apply hidden md:inline text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-amber-500 dark:hover:text-farol transition-colors;
+  }
+}
