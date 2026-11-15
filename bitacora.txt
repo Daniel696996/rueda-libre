@@ -316,3 +316,13 @@ segun lo que vi desarrollando el proyecto yo usaria tailwind para proyectos mas 
 
 Recomendación final para Rueda Libre:
 Recomiendo mantener y desarrollar las siguientes fases de Rueda Libre con Tailwind CSS, el aspecto visual nocturna del negocio con esa estetica oscura la hace ver elegante y hasta familiar, en mi cruva de aprendizaje aprendi lo que era el cansio visual y el estilo integrado con tailwind no me genero esto
+
+Dia 3 MiniReto 9
+Pruebas de Formulario
+1. al dejar el formulario en blanco y darle enviar, pide completar el campo de Nombre y apellido
+2. al llenar unos cuantos espacios del fomurlario y dejar otros vacios el formilario pide llenar el campo vacio independientemennte del que sea, siempre toma el campo que este mas arriba y continua hasta el ultimo
+3. al llenar el telefono con un numero diferente al 3 y no rellenar los 10 digitos lo toma como invalido y pide llenar ese campo
+4. al seleccionar mas de 6 acompañantes lo toma como invalido
+5. y al no poner el @ en el Email, tambien lo toma como invalido
+6. y si no se aceptan los terminos y condiciones el formilario no se envia y pide que se acepten
+7, al llenar los campos con datos que cumplan con las reglas declaradas, deja enviarlo correctamente

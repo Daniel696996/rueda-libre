@@ -136,27 +136,115 @@
                         <p class="font-bold">Advertencia</p>
                         <p class="text-sm">¡No olvides tus documentos antes de venir!</p>
                     </div>
-                    <form class="rounded-xl bg-white dark:bg-slate-900 p-6 space-y-5 border border-slate-200 dark:border-slate-800 shadow-xl transition-colors">
-                        <h2 class="text-2xl font-bold font-display">Inscríbete a tu ruta</h2>
-                        <div class="space-y-4">
-                            <div>
-                                <label class="block mb-2 font-medium text-slate-700 dark:text-slate-200">Correo electrónico</label>
-                                <input type="email" placeholder="correo@ejemplo.com" class="w-full rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 p-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-farol">
-                            </div>
-                            <div>
-                                <label class="block mb-2 font-medium text-slate-700 dark:text-slate-200">Celular</label>
-                                <input type="tel" placeholder="3001234567" class="w-full rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 p-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-farol">
-                            </div>
+
+                    <form class="rounded-2xl bg-white dark:bg-slate-900 p-6 sm:p-8 space-y-6 border border-slate-200 dark:border-slate-800 shadow-xl transition-colors">
+                        <div>
+                            <h2 class="text-2xl md:text-3xl font-bold font-display text-slate-900 dark:text-white">Inscríbete a Rueda Nocturna</h2>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Completa el formulario para asegurar tu cupo en la próxima rodada.</p>
                         </div>
-                        <button type="submit" class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-lg font-semibold transition-colors shadow-sm">
-                            Aceptar
+
+                        <fieldset class="space-y-4 border border-slate-200 dark:border-slate-800 p-4 sm:p-5 rounded-xl">
+                            <legend class="px-2 font-semibold font-display text-amber-600 dark:text-farol">1. Tus datos personales</legend>
+                            
+                            <div>
+                                <label for="nombre" class="block mb-2 font-medium text-sm text-slate-700 dark:text-slate-200">Nombre completo:</label>
+                                <input type="text" id="nombre" name="nombre" minlength="3" maxlength="100" title="Debe tener al menos 3 caracteres." placeholder="Tu nombre y apellido" required
+                                    class="w-full rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 p-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-farol">
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="correo" class="block mb-2 font-medium text-sm text-slate-700 dark:text-slate-200">Correo electrónico:</label>
+                                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required
+                                        class="w-full rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 p-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-farol">
+                                </div>
+                                <div>
+                                    <label for="celular" class="block mb-2 font-medium text-sm text-slate-700 dark:text-slate-200">Celular:</label>
+                                    <input type="tel" id="celular" name="celular" inputmode="numeric" pattern="3[0-9]{9}" maxlength="10" title="Debe tener 10 dígitos y empezar por 3." placeholder="3001234567" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
+                                        class="w-full rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 p-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-farol">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="space-y-4 border border-slate-200 dark:border-slate-800 p-4 sm:p-5 rounded-xl">
+                            <legend class="px-2 font-semibold font-display text-amber-600 dark:text-farol">2. Detalles de tu rodada</legend>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="ruta" class="block mb-2 font-medium text-sm text-slate-700 dark:text-slate-200">Selecciona la ruta:</label>
+                                    <select id="ruta" name="ruta" required
+                                        class="w-full rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 p-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-farol">
+                                        <option value="" selected disabled>Elige una ruta nocturna</option>
+                                        <option value="luces-centro">Luces del Centro ($55.000)</option>
+                                        <option value="miradores">Miradores de la Ciudad ($75.000)</option>
+                                        <option value="palmas">Luna en las Palmas ($95.000)</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="dia" class="block mb-2 font-medium text-sm text-slate-700 dark:text-slate-200">Día de salida:</label>
+                                    <select id="dia" name="dia" required
+                                        class="w-full rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 p-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-farol">
+                                        <option value="" selected disabled>Elige el día</option>
+                                        <option value="jueves">Jueves</option>
+                                        <option value="viernes">Viernes</option>
+                                        <option value="sabado">Sábado</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div>
+                                    <label for="acompanantes" class="block mb-2 font-medium text-sm text-slate-700 dark:text-slate-200">Acompañantes:</label>
+                                    <input type="number" id="acompanantes" name="acompanantes" min="0" max="6" value="0" required
+                                        class="w-full rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 p-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-farol">
+                                </div>
+
+                                <div>
+                                    <label for="experiencia" class="block mb-2 font-medium text-sm text-slate-700 dark:text-slate-200">Nivel de experiencia:</label>
+                                    <select id="experiencia" name="experiencia" required
+                                        class="w-full rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 p-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-farol">
+                                        <option value="" selected disabled>Tu nivel</option>
+                                        <option value="principiante">Principiante</option>
+                                        <option value="intermedio">Intermedio</option>
+                                        <option value="avanzado">Avanzado</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="biciPropia" class="block mb-2 font-medium text-sm text-slate-700 dark:text-slate-200">¿Tienes bici propia?</label>
+                                    <select id="biciPropia" name="biciPropia" required
+                                        class="w-full rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 p-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-farol">
+                                        <option value="" selected disabled>Selecciona</option>
+                                        <option value="si">Sí</option>
+                                        <option value="no">No (alquilar en sede)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="space-y-4 border border-slate-200 dark:border-slate-800 p-4 sm:p-5 rounded-xl">
+                            <legend class="px-2 font-semibold font-display text-amber-600 dark:text-farol">3. Confirmación</legend>
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" id="politicas" name="aceptaPoliticas" required
+                                    class="w-5 h-5 rounded border-slate-300 text-amber-500 focus:ring-farol">
+                                <label for="politicas" class="text-sm text-slate-700 dark:text-slate-300">
+                                    Acepto las condiciones de seguridad, el uso de casco obligatorio y las políticas de Rueda Nocturna.
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <button type="submit" class="w-full bg-farol text-slate-950 font-semibold py-3.5 rounded-full hover:brightness-110 shadow-md transition-all text-center">
+                            Enviar inscripción a Rueda Nocturna
                         </button>
                     </form>
                 </div>
             </div>
         </section>
+                </div>
+            </div>
+        </section>
     </main>
-
     <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 transition-colors">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
