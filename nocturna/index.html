@@ -8,123 +8,122 @@
     <link href="./src/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-slate-950 text-white">
-    <header class="bg-slate-900 text-white">
-        <nav class="border-b border-slate-800">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
-                <a href="#" class="text-lg sm:text-xl font-bold text-amber-300 tracking-wide">
-                    Rueda Nocturna
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-white font-sans transition-colors">
+    <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 transition-colors">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <a href="#" class="text-lg sm:text-xl font-bold font-display text-amber-500 dark:text-farol tracking-wide">
+                Rueda Nocturna
+            </a>
+            <div class="flex items-center gap-4 md:gap-6">
+                <a href="#rutas" class="hidden md:inline text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-amber-500 dark:hover:text-farol transition-colors">
+                    Rutas
                 </a>
-                <div class="flex items-center gap-4 md:gap-6">
-                    <a href="#rutas" class="hidden md:inline text-sm font-medium text-slate-300 hover:text-amber-300 transition-colors">
-                        Rutas
-                    </a>
-                    <a href="#como-funciona" class="hidden md:inline text-sm font-medium text-slate-300 hover:text-amber-300 transition-colors">
-                        ¿Cómo funciona?
-                    </a>
-                    <a href="#inscripcion" class="bg-amber-400 text-slate-900 text-sm font-semibold px-5 py-2 rounded-full hover:bg-amber-300 transition-colors">
-                        Inscríbete
-                    </a>
-                </div>
+                <a href="#como-funciona" class="hidden md:inline text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-amber-500 dark:hover:text-farol transition-colors">
+                    ¿Cómo funciona?
+                </a>
+                <a href="#inscripcion" class="bg-farol text-slate-950 text-sm font-semibold px-5 py-2 rounded-full hover:brightness-110 transition-all shadow-sm">
+                    Inscríbete
+                </a>
             </div>
         </nav>
-
-        <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16 lg:py-20 text-center">
-            <p class="uppercase tracking-wide text-xs sm:text-sm text-amber-300 font-semibold">Nuevo · Jueves a sábado</p>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-3">Rueda Nocturna</h1>
-            <div class="mt-6 flex justify-center">
-                <img src="../assets/dark/dark.png" alt="Animación Rueda Nocturna" class="w-40 sm:w-48 h-auto object-contain">
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16 lg:py-20 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+            <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+                <img src="../assets/gif/dark.gif" alt="Animación Rueda Nocturna" class="w-64 sm:w-80 md:w-96 h-auto object-contain drop-shadow-lg">
             </div>
 
-            <p class="text-base sm:text-lg text-slate-300 leading-relaxed mt-4 max-w-xl mx-auto">
-                Descubre Medellín en bici cuando se encienden las luces
-            </p>
-            <ul class="flex justify-center gap-6 mt-6 text-sm sm:text-base font-semibold">
-                <li>3 rutas</li>
-                <li>Desde $55.000</li>
-            </ul>
-            <a href="#inscripcion"
-                class="inline-block mt-8 bg-amber-400 text-slate-900 font-semibold px-6 py-3 rounded-full hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-200">
-                Inscríbete
-            </a>
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <p class="uppercase tracking-wide text-xs sm:text-sm text-amber-600 dark:text-farol font-semibold">Nuevo · Jueves a sábado</p>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold font-display mt-3">Rueda Nocturna</h1>
+                <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed mt-4">
+                    Descubre Medellín en bici cuando se encienden las luces
+                </p>
+                <ul class="flex justify-center md:justify-start gap-6 mt-6 text-sm sm:text-base font-semibold">
+                    <li>3 rutas</li>
+                    <li>Desde $55.000</li>
+                </ul>
+                <a href="#inscripcion"
+                    class="inline-block mt-8 bg-farol text-slate-950 font-semibold px-6 py-3 rounded-full hover:brightness-110 shadow-md transition-all focus:outline-none focus:ring-2 focus:ring-farol/50">
+                    Inscríbete
+                </a>
+            </div>
         </section>
     </header>
 
     <main>
         <section id="rutas" class="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">Rutas nocturnas</h2>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold font-display mb-8">Rutas nocturnas</h2>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <article class="bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden">
+                <article class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl overflow-hidden transition-colors">
                     <img class="w-full h-48 object-cover" src="../assets/dark/luces.jpg" alt="Luces del Centro">
-                    <div class="bg-slate-100 p-5 space-y-3">
+                    <div class="p-5 space-y-3">
                         <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-2 py-1 rounded-full">Fácil</span>
-                        <h3 class="text-xl font-bold text-slate-900">Luces del Centro</h3>
+                        <h3 class="text-xl font-bold font-display text-slate-900 dark:text-white">Luces del Centro</h3>
                         <dl class="grid grid-cols-3 gap-2">
-                            <div><dt class="text-xs text-slate-500">Distancia</dt><dd class="font-semibold text-slate-900">10 km</dd></div>
-                            <div><dt class="text-xs text-slate-500">Duración</dt><dd class="font-semibold text-slate-900">2 h</dd></div>
-                            <div><dt class="text-xs text-slate-500">Punto</dt><dd class="font-semibold text-slate-900">Sede</dd></div>
+                            <div><dt class="text-xs text-slate-500 dark:text-slate-400">Distancia</dt><dd class="font-semibold text-slate-900 dark:text-slate-200">10 km</dd></div>
+                            <div><dt class="text-xs text-slate-500 dark:text-slate-400">Duración</dt><dd class="font-semibold text-slate-900 dark:text-slate-200">2 h</dd></div>
+                            <div><dt class="text-xs text-slate-500 dark:text-slate-400">Punto</dt><dd class="font-semibold text-slate-900 dark:text-slate-200">Sede</dd></div>
                         </dl>
-                        <p class="text-2xl font-bold text-slate-900">$55.000</p>
-                        <a href="#inscripcion" class="block text-center bg-amber-400 text-slate-900 font-semibold py-3 rounded-full hover:bg-amber-300">Inscríbete</a>
+                        <p class="text-2xl font-bold text-slate-900 dark:text-white">$55.000</p>
+                        <a href="#inscripcion" class="block text-center bg-farol text-slate-950 font-semibold py-3 rounded-full hover:brightness-110 transition-all shadow-sm">Inscríbete</a>
                     </div>
                 </article>
 
-                <article class="bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden">
+                <article class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl overflow-hidden transition-colors">
                     <img class="w-full h-48 object-cover" src="../assets/dark/mirador.jpg" alt="Miradores de la Ciudad">
-                    <div class="bg-slate-100 p-5 space-y-3">
-                        <span class="inline-block bg-yellow-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded-full">Medio</span>
-                        <h3 class="text-xl font-bold text-slate-900">Miradores de la Ciudad</h3>
+                    <div class="p-5 space-y-3">
+                        <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2 py-1 rounded-full">Medio</span>
+                        <h3 class="text-xl font-bold font-display text-slate-900 dark:text-white">Miradores de la Ciudad</h3>
                         <dl class="grid grid-cols-3 gap-2">
-                            <div><dt class="text-xs text-slate-500">Distancia</dt><dd class="font-semibold text-slate-900">16 km</dd></div>
-                            <div><dt class="text-xs text-slate-500">Duración</dt><dd class="font-semibold text-slate-900">3 h</dd></div>
-                            <div><dt class="text-xs text-slate-500">Punto</dt><dd class="font-semibold text-slate-900">Sede</dd></div>
+                            <div><dt class="text-xs text-slate-500 dark:text-slate-400">Distancia</dt><dd class="font-semibold text-slate-900 dark:text-slate-200">16 km</dd></div>
+                            <div><dt class="text-xs text-slate-500 dark:text-slate-400">Duración</dt><dd class="font-semibold text-slate-900 dark:text-slate-200">3 h</dd></div>
+                            <div><dt class="text-xs text-slate-500 dark:text-slate-400">Punto</dt><dd class="font-semibold text-slate-900 dark:text-slate-200">Sede</dd></div>
                         </dl>
-                        <p class="text-2xl font-bold text-slate-900">$75.000</p>
-                        <a href="#inscripcion" class="block text-center bg-amber-400 text-slate-900 font-semibold py-3 rounded-full hover:bg-amber-300">Inscríbete</a>
+                        <p class="text-2xl font-bold text-slate-900 dark:text-white">$75.000</p>
+                        <a href="#inscripcion" class="block text-center bg-farol text-slate-950 font-semibold py-3 rounded-full hover:brightness-110 transition-all shadow-sm">Inscríbete</a>
                     </div>
                 </article>
-
-                <article class="bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden">
+                
+                <article class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl overflow-hidden transition-colors">
                     <img class="w-full h-48 object-cover" src="../assets/dark/palma.png" alt="Luna en las Palmas">
-                    <div class="bg-slate-100 p-5 space-y-3">
-                        <span class="inline-block bg-red-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded-full">Difícil</span>
-                        <h3 class="text-xl font-bold text-slate-900">Luna en las Palmas</h3>
+                    <div class="p-5 space-y-3">
+                        <span class="inline-block bg-rose-100 text-rose-800 text-xs font-semibold px-2 py-1 rounded-full">Difícil</span>
+                        <h3 class="text-xl font-bold font-display text-slate-900 dark:text-white">Luna en las Palmas</h3>
                         <dl class="grid grid-cols-3 gap-2">
-                            <div><dt class="text-xs text-slate-500">Distancia</dt><dd class="font-semibold text-slate-900">22 km</dd></div>
-                            <div><dt class="text-xs text-slate-500">Duración</dt><dd class="font-semibold text-slate-900">3,5 h</dd></div>
-                            <div><dt class="text-xs text-slate-500">Punto</dt><dd class="font-semibold text-slate-900">Sede</dd></div>
+                            <div><dt class="text-xs text-slate-500 dark:text-slate-400">Distancia</dt><dd class="font-semibold text-slate-900 dark:text-slate-200">22 km</dd></div>
+                            <div><dt class="text-xs text-slate-500 dark:text-slate-400">Duración</dt><dd class="font-semibold text-slate-900 dark:text-slate-200">3,5 h</dd></div>
+                            <div><dt class="text-xs text-slate-500 dark:text-slate-400">Punto</dt><dd class="font-semibold text-slate-900 dark:text-slate-200">Sede</dd></div>
                         </dl>
-                        <p class="text-2xl font-bold text-slate-900">$95.000</p>
-                        <a href="#inscripcion" class="block text-center bg-amber-400 text-slate-900 font-semibold py-3 rounded-full hover:bg-amber-300">Inscríbete</a>
+                        <p class="text-2xl font-bold text-slate-900 dark:text-white">$95.000</p>
+                        <a href="#inscripcion" class="block text-center bg-farol text-slate-950 font-semibold py-3 rounded-full hover:brightness-110 transition-all shadow-sm">Inscríbete</a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="como-funciona" class="bg-slate-900/50 py-12 md:py-16">
+        <section id="como-funciona" class="bg-slate-100 dark:bg-slate-900/50 py-12 md:py-16 transition-colors">
             <div class="max-w-6xl mx-auto px-4 sm:px-6">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-center">¿Cómo funciona?</h2>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold font-display mb-10 text-center">¿Cómo funciona?</h2>
                 <div class="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-6">
-                    <div class="flex-1 md:basis-[calc(50%-0.75rem)] lg:basis-1/4 flex flex-col items-center text-center gap-3 p-6 bg-slate-900 rounded-xl border border-slate-800">
-                        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-400 text-slate-900 font-bold text-xl">1</span>
-                        <h3 class="font-semibold text-lg">Elige tu ruta</h3>
-                        <p class="text-sm text-slate-300">Escoge entre las opciones según tu nivel.</p>
+                    <div class="flex-1 md:basis-[calc(50%-0.75rem)] lg:basis-1/4 flex flex-col items-center text-center gap-3 p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-farol text-slate-950 font-bold text-xl">1</span>
+                        <h3 class="font-semibold font-display text-lg">Elige tu ruta</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Escoge entre las opciones según tu nivel.</p>
                     </div>
-                    <div class="flex-1 md:basis-[calc(50%-0.75rem)] lg:basis-1/4 flex flex-col items-center text-center gap-3 p-6 bg-slate-900 rounded-xl border border-slate-800">
-                        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-400 text-slate-900 font-bold text-xl">2</span>
-                        <h3 class="font-semibold text-lg">Inscríbete</h3>
-                        <p class="text-sm text-slate-300">Completa el formulario para reservar tu cupo.</p>
+                    <div class="flex-1 md:basis-[calc(50%-0.75rem)] lg:basis-1/4 flex flex-col items-center text-center gap-3 p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-farol text-slate-950 font-bold text-xl">2</span>
+                        <h3 class="font-semibold font-display text-lg">Inscríbete</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Completa el formulario para reservar tu cupo.</p>
                     </div>
-                    <div class="flex-1 md:basis-[calc(50%-0.75rem)] lg:basis-1/4 flex flex-col items-center text-center gap-3 p-6 bg-slate-900 rounded-xl border border-slate-800">
-                        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-400 text-slate-900 font-bold text-xl">3</span>
-                        <h3 class="font-semibold text-lg">Recoge equipo</h3>
-                        <p class="text-sm text-slate-300">Pasa por la sede antes de salir.</p>
+                    <div class="flex-1 md:basis-[calc(50%-0.75rem)] lg:basis-1/4 flex flex-col items-center text-center gap-3 p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-farol text-slate-950 font-bold text-xl">3</span>
+                        <h3 class="font-semibold font-display text-lg">Recoge equipo</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Pasa por la sede antes de salir.</p>
                     </div>
-                    <div class="flex-1 md:basis-[calc(50%-0.75rem)] lg:basis-1/4 flex flex-col items-center text-center gap-3 p-6 bg-slate-900 rounded-xl border border-slate-800">
-                        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-400 text-slate-900 font-bold text-xl">4</span>
-                        <h3 class="font-semibold text-lg">Rueda</h3>
-                        <p class="text-sm text-slate-300">Disfruta Medellín de noche junto al grupo.</p>
+                    <div class="flex-1 md:basis-[calc(50%-0.75rem)] lg:basis-1/4 flex flex-col items-center text-center gap-3 p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-farol text-slate-950 font-bold text-xl">4</span>
+                        <h3 class="font-semibold font-display text-lg">Rueda</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Disfruta Medellín de noche junto al grupo.</p>
                     </div>
                 </div>
             </div>
@@ -133,23 +132,23 @@
         <section id="inscripcion" class="py-12 md:py-16">
             <div class="max-w-6xl mx-auto px-4 sm:px-6">
                 <div class="max-w-xl mx-auto space-y-6">
-                    <div class="bg-slate-900/50 border-l-4 border-yellow-500 text-yellow-300 p-4 rounded-lg shadow-sm">
+                    <div class="bg-amber-50 dark:bg-slate-900/50 border-l-4 border-amber-500 text-amber-800 dark:text-amber-300 p-4 rounded-lg shadow-sm">
                         <p class="font-bold">Advertencia</p>
                         <p class="text-sm">¡No olvides tus documentos antes de venir!</p>
                     </div>
-                    <form class="rounded-xl bg-slate-900/50 p-6 space-y-5 border border-slate-800">
-                        <h2 class="text-2xl font-bold text-white">Inscríbete a tu ruta</h2>
+                    <form class="rounded-xl bg-white dark:bg-slate-900 p-6 space-y-5 border border-slate-200 dark:border-slate-800 shadow-xl transition-colors">
+                        <h2 class="text-2xl font-bold font-display">Inscríbete a tu ruta</h2>
                         <div class="space-y-4">
                             <div>
-                                <label class="block mb-2 font-medium">Correo electrónico</label>
-                                <input type="email" placeholder="correo@ejemplo.com" class="w-full rounded-lg bg-white p-3 text-slate-950 focus:outline-none focus:ring-2 focus:ring-amber-300">
+                                <label class="block mb-2 font-medium text-slate-700 dark:text-slate-200">Correo electrónico</label>
+                                <input type="email" placeholder="correo@ejemplo.com" class="w-full rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 p-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-farol">
                             </div>
                             <div>
-                                <label class="block mb-2 font-medium">Celular</label>
-                                <input type="tel" placeholder="3001234567" class="w-full rounded-lg bg-white p-3 text-slate-950 focus:outline-none focus:ring-2 focus:ring-amber-300">
+                                <label class="block mb-2 font-medium text-slate-700 dark:text-slate-200">Celular</label>
+                                <input type="tel" placeholder="3001234567" class="w-full rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 p-3 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-farol">
                             </div>
                         </div>
-                        <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors">
+                        <button type="submit" class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-lg font-semibold transition-colors shadow-sm">
                             Aceptar
                         </button>
                     </form>
@@ -158,22 +157,22 @@
         </section>
     </main>
 
-    <footer class="bg-slate-900 border-t border-slate-800">
+    <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 transition-colors">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 flex flex-col md:flex-row justify-between gap-8">
             <div class="md:max-w-xs">
-                <p class="text-lg font-bold text-amber-300">Rueda Nocturna</p>
-                <p class="text-sm text-slate-400 mt-2">Un programa de Rueda Libre para recorrer Medellín en bici de noche.</p>
+                <p class="text-lg font-bold font-display text-amber-500 dark:text-farol">Rueda Nocturna</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Un programa de Rueda Libre para recorrer Medellín en bici de noche.</p>
             </div>
             <div class="flex flex-col gap-2">
-                <p class="font-semibold text-sm text-slate-200">Enlaces</p>
-                <a href="#rutas" class="text-sm text-slate-400 hover:text-amber-300 transition-colors">Rutas</a>
-                <a href="#como-funciona" class="text-sm text-slate-400 hover:text-amber-300 transition-colors">¿Cómo funciona?</a>
-                <a href="#inscripcion" class="text-sm text-slate-400 hover:text-amber-300 transition-colors">Inscríbete</a>
+                <p class="font-semibold text-sm text-slate-900 dark:text-slate-200">Enlaces</p>
+                <a href="#rutas" class="text-sm text-slate-600 dark:text-slate-400 hover:text-amber-500 dark:hover:text-farol transition-colors">Rutas</a>
+                <a href="#como-funciona" class="text-sm text-slate-600 dark:text-slate-400 hover:text-amber-500 dark:hover:text-farol transition-colors">¿Cómo funciona?</a>
+                <a href="#inscripcion" class="text-sm text-slate-600 dark:text-slate-400 hover:text-amber-500 dark:hover:text-farol transition-colors">Inscríbete</a>
             </div>
             <div class="flex flex-col gap-2">
-                <p class="font-semibold text-sm text-slate-200">Contacto</p>
-                <p class="text-sm text-slate-400">Sede de Rueda Libre, Medellín</p>
-                <p class="text-sm text-slate-400">hola@ruedalibre.co</p>
+                <p class="font-semibold text-sm text-slate-900 dark:text-slate-200">Contacto</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Sede de Rueda Libre, Medellín</p>
+                <p class="text-sm text-slate-600 dark:text-slate-400">hola@ruedalibre.co</p>
             </div>
         </div>
     </footer>
