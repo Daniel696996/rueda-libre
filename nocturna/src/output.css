@@ -623,12 +623,20 @@ video {
   height: 3rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-12 {
   width: 3rem;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .max-w-5xl {
@@ -867,6 +875,11 @@ video {
 .bg-yellow-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 249 195 / var(--tw-bg-opacity, 1));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -1201,7 +1214,16 @@ video {
   --tw-ring-color: rgb(30 41 59 / var(--tw-ring-opacity, 1));
 }
 
+.focus\:ring-amber-300:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(252 211 77 / var(--tw-ring-opacity, 1));
+}
+
 @media (min-width: 640px) {
+  .sm\:w-48 {
+    width: 12rem;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
